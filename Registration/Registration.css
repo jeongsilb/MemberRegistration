@@ -1,0 +1,63 @@
+body {
+    line-height: 1;
+    margin-right: auto;
+    margin-left: auto;
+    width: 980px;
+    font-family: arial, helvetica, sans-serif;
+    color:black;
+    background-image: url('background.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+
+.img-text{
+    background-color:white;
+    opacity: 0.7;
+}
+    h1 {
+    margin-left: 70px;
+    color: rgba(255, 235, 205, 0.815);
+    }
+    form li {
+    list-style: none;
+    margin-bottom: 5px;
+    }
+      
+    form ul li label{
+    float: left;
+    clear: left;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:14px;
+    }
+      
+    form ul li input, select, span {
+    float: left;
+    margin-bottom: 10px;
+    }
+    
+    [type="submit"] {
+    
+    clear:left;
+    margin: 10px 0 0 40px;
+    font-size:18px ;
+    display:inline;
+    color: black;
+    background-color: blanchedalmond;
+    }
+    [type="reset"] {
+   
+    clear:right;
+    margin: 10px 0 0 20px;
+    font-size:18px ;
+    display:inline;
+    color: blanchedalmond;
+    background-color:black;
+    }
+    p {
+    margin-left: 70px;
+    font-weight: bold;
+    }

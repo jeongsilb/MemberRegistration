@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+        <link rel='stylesheet' href='Registration.css' type='text/css' />
+        <script src="Registration.js"></script>
+    </head>
+    <body onload="document.registration.fname.focus();">
+                <fieldset class="img-text">
+            <h1>Member Registration</h1>
+            <p>Please complete the all fields below:</p>
+            <form name='registration'>
+                <ul>
+                    <li><label for="userid">First name:<sup style="color:#F00">*</sup> </label></li>
+                    <li><input type="text" name="fname" size="27" required/></li>
+                    <li><label for="passid">Last name:<sup style="color:#F00">*</sup> </label></li>
+                    <li><input type="text" name="lname" size="27" required/></li>
+
+                    <li><label for="address" >Address:<sup style="color:#F00">*</sup> </label></li>
+                    <li><input type="text" name="address" size="27" placeholder="Address" required/></li>
+
+                    <li><label for="userid">City:<sup style="color:#F00">*</sup> </label></li>
+                    <li><input type="text" name="city" size="27" placeholder="city name" required/></li>
+
+                    <li><label for="passid">Postal Code:<sup style="color:#F00">*</sup> </label></li>
+                    <li><input type="text" name="postalcode" size="27" placeholder="a0a0a0" required/></li>
+
+                    <li><label for="userid">Provience:<sup style="color:#F00">*</sup> </label></li>
+                    <!--<li><input type="text" name="provience" size="27" /></li> -->
+                    <li><select name="provience" required>
+                        <option selected="" value="Default">(Please select a Provience)</option>
+                        <option value="QC">QC</option>
+                        <option value="ON">ON</option>
+                        <option value="MN">MN</option>
+                        <option value="SK">SK</option>
+                        <option value="AB">AB</option>
+                        <option value="BC">BC</option>
+                    </select>
+                </li>   
+                <li><label for="passid">Age:<sup style="color:#F00">*</sup> </label></li>
+                <li><input type="text" name="age" size="27" placeholder="at last 18 age" required/></li>
+
+                <li><label for="userid">Password:<sup style="color:#F00">*</sup> </label></li>
+                <li><input type="Password" id="pw1" name="passid" size="27" placeholder="Password" required/></li>
+                <li><label for="passid">Confirm:<sup style="color:#F00">*</sup> </label></li>
+                <li><input type="Password" id="pw2" name="confirm" size="27" placeholder="confirm Password" required/></li>
+                <li id="passwordError" class="errorMsg"></li>
+
+                <li><label for="email">Email:<sup style="color:#F00">*</sup> </label></li>
+                <li><input type="text" name="email" size="27" placeholder="*****@****.**" required/></li>   
+                <li><input type="submit" name="submit" value="Register Now"onClick="return formValidation();"/></li>
+                <li><input type="reset" name="reset" value="Clear Form" onClick="return confirmreset()" /></li>
+            </ul>
+        </form>
+        </fieldset>
+        <footer>
+
+            <h6><b id="copyright">&copy;Copyright Jeongsil Baek</b></h6>
+        </footer>
+    </body>
+</html>
